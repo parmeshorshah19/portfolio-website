@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e674bba739.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.png" class="logo"></img>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <i class="fas fa-times"></i>
+                </ul>
+                <i class="fas fa-bars"></i>
+            </nav>
+            <div class="header-text">
+                <p>IOT Engineer</p>
+                <h1>Hi, I'm <span>Parmeshor</span><br>Shahu Teli from Nepal</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ----------ABOUT---------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>As a dedicated and ambitious Computer Science Engineering student pursuing a specialization in IoT at Jain University, Bangalore, my aim is to leverage my knowledge and skills to contribute meaningfully to the field of technology.
+                        I am driven by a passion for innovation and a desire to create smart, efficient solutions using IoT technology.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>App Development</span><br>Building Android/iOS apps</li>
+                            <li><span>Video Editing</span><br>Editing Ads/Promo videos</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022-2023</span><br>Web app Development</li>
+                            <li><span>2019-2023</span><br>Video Editing</li>
+                            <li><span>2023 July-August</span><br>Internship at Suven Consultant & Technology Pvt Ltd.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2019-2021</span><br>New Everest College</li>
+                            <li><span>2021-2025</span><br>B-Tech from Jain University Bangalore</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------SERVICES---------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-android"></i>
+                    <h2>App Development</h2>
+                    <p>As a skilled app developer, I have a strong foundation in creating user-friendly and innovative mobile applications for Android and iOS platforms. With hands-on experience in various programming languages and development frameworks,
+                        I have successfully delivered projects that align with the latest industry trends and best practices.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>As a dedicated web developer, I possess a strong passion for crafting interactive and user-centric websites. With a focus on the latest web technologies and best practices, I create seamless digital experiences that combine functionality,
+                        performance, and aesthetic appeal.</p>
+                    <a href="#">Learn more</a>
+
+                </div>
+                <div>
+
+                    <i class="fa-solid fa-video"></i>
+                    <h2>Video Editing</h2>
+                    <p>As a passionate and detail-oriented video editor, I have a strong background in transforming raw footage into captivating visual stories. With proficiency in industry-leading video editing software and a keen eye for creative storytelling,
+                        I bring a unique and artistic perspective to every project I undertake.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------PORTFOLIO--------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Works</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="work-1.jpg" alt="">
+                    <div class="layer">
+                        <h2>College Event Video</h2>
+                        <p>As the video editor for numerous college events, I have had the exciting opportunity to capture and immortalize the vibrant and unforgettable moments that unfold during our campus gatherings. Through my creative storytelling and
+                            technical expertise, I craft engaging videos that encapsulate the spirit and energy of each event, leaving a lasting impact on the audience.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-2.jpg" alt="">
+                    <div class="layer">
+                        <h2>Admin Dashboard</h2>
+                        <p>The admin dashboard serves as the central command center for managing and monitoring various aspects of a web application or system. As an essential tool for administrators and authorized personnel, the admin dashboard provides
+                            an intuitive and efficient interface to oversee user activities, access crucial data, and perform administrative tasks.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-3.jpg" alt="">
+                    <div class="layer">
+                        <h2>Online Shopping App</h2>
+                        <p>My restaurant app is a user-friendly and feature-rich mobile application designed to provide a seamless dining experience for our valued customers. With a focus on convenience, customization, and efficient service, our app empowers
+                            users to explore our diverse menu, place orders, and engage with our restaurant effortlessly.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- ----------CONTACT---------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i> parmeshorshah19@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> 7463092903</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter-square"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn3">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright @ Parmeshor Shahu Teli</p>
+        </div>
+    </div>
+
+
+
+    <script>
+        var tabLinks = document.getElementsByClassName('tab-links');
+        var tabContents = document.getElementsByClassName('tab-contents');
+
+        function openTab(tabName) {
+            for (tabLink of tabLinks) {
+                tabLink.classList.remove('active-link');
+            }
+            for (tabContent of tabContents) {
+                tabContent.classList.remove('active-tab');
+            }
+            event.currentTarget.classList.add('active-link');
+            document.getElementById(tabName).classList.add('active-tab');
+        }
+
+        // JavaScript for handling the mobile navigation menu
+        document.querySelector('.fas.fa-bars').addEventListener('click', function() {
+            document.querySelector('nav ul').classList.toggle('show');
+        });
+
+        document.querySelector('.fas.fa-times').addEventListener('click', function() {
+            document.querySelector('nav ul').classList.remove('show');
+        });
+    </script>
+</body>
+
+</html>
