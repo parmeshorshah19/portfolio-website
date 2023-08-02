@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio Website</title>
+    <title>Parmeshor Shahu Teli</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/e674bba739.js" crossorigin="anonymous"></script>
 </head>
@@ -15,15 +15,16 @@
         <div class="container">
             <nav>
                 <img src="logo.png" class="logo"></img>
+                <ul id="sidemenu"></ul>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <i class="fas fa-times"></i>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Works</a></li>
+                    <li><a href="#contact">Contacts</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
                 </ul>
-                <i class="fas fa-bars"></i>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <p>IOT Engineer</p>
@@ -156,8 +157,7 @@
                     <a href="my-cv.pdf" download class="btn btn2">Download CV</a>
                 </div>
                 <div class="contact-right">
-                    <form>
-                        <input type="text" name="Name" placeholder="Your Name" required>
+                    <form name='submit-to-google-sheet' <input type="text" name="Name" placeholder="Your Name" required>
                         <input type="email" name="Email" placeholder="Your Email" required>
                         <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                         <button type="submit" class="btn btn3">Submit</button>
@@ -170,31 +170,36 @@
         </div>
     </div>
 
-
-
     <script>
-        var tabLinks = document.getElementsByClassName('tab-links');
-        var tabContents = document.getElementsByClassName('tab-contents');
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxfHBhkgMhIcMgAcab-fntkAr9mkBZwBse-RARLN6TWm0-_NWLKTRfV4UU1E-nQw0PqBg/exec'
 
-        function openTab(tabName) {
-            for (tabLink of tabLinks) {
-                tabLink.classList.remove('active-link');
-            }
-            for (tabContent of tabContents) {
-                tabContent.classList.remove('active-tab');
-            }
-            event.currentTarget.classList.add('active-link');
-            document.getElementById(tabName).classList.add('active-tab');
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, {
+                    method: 'POST',
+                    body: new FormData(form)
+                })
+                .then(response => console.log('Success!', response))
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu")
+
+        function openmenu() {
+            sidemenu.style.right = "0"
+
         }
 
-        // JavaScript for handling the mobile navigation menu
-        document.querySelector('.fas.fa-bars').addEventListener('click', function() {
-            document.querySelector('nav ul').classList.toggle('show');
-        });
+        function openmenu() {
+            sidemenu.style.right = "0"
 
-        document.querySelector('.fas.fa-times').addEventListener('click', function() {
-            document.querySelector('nav ul').classList.remove('show');
-        });
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+
+        }
     </script>
 </body>
 

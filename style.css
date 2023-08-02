@@ -5,8 +5,12 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    background: black;
+    background: rgb(19, 17, 17);
     color: #fff;
 }
 
@@ -463,4 +467,10 @@ nav .fas {
         display: block;
         margin: 25px;
     }
+}
+
+#msg {
+    color: #421515;
+    margin-top: -40px;
+    display: block;
 }
